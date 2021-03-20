@@ -1,7 +1,7 @@
 # MeowBot
 A discord simple bot that sends cat pictures and other commands, it was my first time using Node.js
 
-Didn't include de "node_modules" file, but has you see in the require function you know what you gotta install.
+Didn't include de "node_modules" file, but has you see in the require function you know what you gotta install. Also the config.json because of the bot token, but just used it for the prefix and token.
 
 Commands:
 

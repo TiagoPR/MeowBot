@@ -11,3 +11,5 @@ The basic Ping -> Pong.
 Tried to implement a !play command but couldn't manage, well, I had to install other software and i wasn't so keen.
 
 ![MeowBot](https://user-images.githubusercontent.com/63853699/111885111-9796d180-89bd-11eb-97a1-4bdebaf61080.png)
+
+** image found on pinterest,it is not mine **

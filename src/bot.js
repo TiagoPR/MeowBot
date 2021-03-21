@@ -3,11 +3,12 @@ const prefix = process.env.prefix;
 const {Client, Attachment} = require('discord.js');
 const Discord = require('discord.js');
 
+const path = require('path');
 const fs = require('fs');
 // bot client
 const client = new Discord.Client();
 client.commands = new Discord.Collection();
-const commandFolders = fs.readdirSync('./commands');
+const commandFolders = fs.readdirSync(path.resolve(__dirname, 'commands'));
 
 
 
@@ -17,7 +18,7 @@ client.once('ready' , () => {
 })
 
 for (const folder of commandFolders) {
-	const commandFiles = fs.readdirSync(`./commands/${folder}`).filter(file => file.endsWith('.js'));
+	const commandFiles = fs.readdirSync(path.resolve(__dirname, `./commands/${folder}`)).filter(file => file.endsWith('.js'));
     
 	for (const file of commandFiles) {
 		const command = require(`./commands/${folder}/${file}`);
